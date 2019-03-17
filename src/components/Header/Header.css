@@ -20,27 +20,53 @@ html {
     color: white;
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
     text-transform: uppercase;
     cursor: pointer;
     background-color: #212528;
 }
 
+.navbar-logo-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
 .navbar-logo {
     font-family: 'Kaushan Script', cursive;
     color: #fed136;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+.nav-btn {
+    display: flex;
+    background-color: #FED137;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.hide-menu {
+    opacity: 0;
+}
+
+.btn-text {
+    margin-right: 14%;
 }
 
 .nav-items {
     list-style: none;
     width: 50%;
     justify-content: flex-end;
+    align-content: center;
+    padding-left: 12px;
 }
 
 .navbar-item {
     margin-right: 8%;
+    margin-bottom: 20px;
 }
 
 .navbar-link {
@@ -48,10 +74,19 @@ html {
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+
 @media only screen and (min-width: 1024px) {
     .navbar {
         background: rgba(16, 18, 17, 0);
         flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-btn {
+        opacity: 0;
     }
 
     .navbar-logo {
@@ -60,6 +95,10 @@ html {
     
     .nav {
         padding: 20px 20px;
+    }
+
+    .navbar-logo-section {
+        padding-top: 0px;
     }
 
     .nav-items {
