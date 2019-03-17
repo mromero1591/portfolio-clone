@@ -1,0 +1,72 @@
+/* Color:
+navbar: #212528
+*/
+
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+*/
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+.navbar {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #212528;
+}
+
+.navbar-logo {
+    font-family: 'Kaushan Script', cursive;
+    color: #fed136;
+    font-size: 12px;
+}
+
+.nav-items {
+    list-style: none;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    margin-right: 8%;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar {
+        background: rgba(16, 18, 17, 0);
+        flex-flow: row;
+    }
+
+    .navbar-logo {
+        font-size: 26px;
+    }
+    
+    .nav {
+        padding: 20px 20px;
+    }
+
+    .nav-items {
+        display: flex;
+    }
+
+    .navbar-link:hover {
+        color: #fed136;
+    }
+}
